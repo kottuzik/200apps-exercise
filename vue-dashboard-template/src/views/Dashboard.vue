@@ -2,7 +2,7 @@
     import DashboardSidebar from '../components/DashboardSidebar.vue';
     import Header from '../components/Header.vue';
     import CardTeamsStrength from '../components/CardTeamsStrength.vue';
-    import CardStats from '../components/CardStats.vue';
+    import CardChart from '../components/CardChart.vue';
 </script>
 
 <template>
@@ -12,7 +12,7 @@
             <Header />
             <section class="inner-section">
                 <CardTeamsStrength />
-                <CardStats />
+                <CardChart />
             </section>
         </main>
     </div>
