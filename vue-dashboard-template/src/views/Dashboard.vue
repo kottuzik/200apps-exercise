@@ -3,6 +3,9 @@
     import Header from '../components/Header.vue';
     import CardTeamsStrength from '../components/CardTeamsStrength.vue';
     import CardChart from '../components/CardChart.vue';
+    import CardStats from '../components/CardStats.vue';
+    import CardProject from '../components/CardProject.vue';
+    import Notifications from '../components/Notifications.vue';
 </script>
 
 <template>
@@ -13,7 +16,12 @@
             <section class="inner-section">
                 <CardTeamsStrength />
                 <CardChart />
+                <CardStats />
             </section>
+            <section class="second-section">
+                <CardProject />
+                <Notifications />
+            </section>            
         </main>
     </div>
 </template>
@@ -21,13 +29,13 @@
     .dashboard-main{
         display: flex; width: 100%;
     }
-    .inner-section{
-        display: flex; gap: 10px
-    }
     .main-container{
-        padding-inline: 2vw; padding-top: 1vw; width: 100%; 
+        padding-inline: 2vw; padding-top: 1vw; width: 100%; overflow: auto; padding-bottom: 2vw; height: 100vh;
     }
     .inner-section{
-        margin-top: 2.2rem;
-    }
+        display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); margin-top: 2.2rem;
+    }    
+    .second-section{
+        display: grid; gap: 1.5rem; grid-template-columns: 2fr 1fr;
+    }    
 </style>

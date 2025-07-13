@@ -3,7 +3,10 @@
 
 $black: #23262F;
 
-html{direction: ltr;}
+html{direction: ltr; }
+html, body {
+    height: 100%; overflow: hidden;
+}
 *{
     font-family: 'Manrope', sans-serif;
 }
@@ -75,6 +78,5 @@ li[role="menuitem"]{
     color: $black; font-weight: 700; font-size: 0.938vw;
 }
 .card-wrapper{ 
-    width: 50%;
     padding: 1vw 1.5vw;
 }
