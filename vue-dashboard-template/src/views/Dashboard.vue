@@ -1,12 +1,28 @@
 <script setup>
     import DashboardSidebar from '../components/DashboardSidebar.vue';
+    import Header from '../components/Header.vue';
+    import CardTeamsStrength from '../components/CardTeamsStrength.vue';
 </script>
 
 <template>
-    <div class="flex">
+    <div class="dashboard-main">
         <DashboardSidebar class="w-1/5 bg-gray-100 min-h-screen"/>
         <main class="main-container min-h-screen">
-            <h1>Main content</h1>
+            <Header />
+            <section class="inner-section">
+                <CardTeamsStrength />
+            </section>
         </main>
     </div>
 </template>
+<style lang="scss" scoped>
+    .dashboard-main{
+        display: flex; width: 100%;
+    }
+    .main-container{
+        padding-inline: 2vw; padding-top: 1vw; width: 100%; 
+    }
+    .inner-section{
+        margin-top: 2.2rem;
+    }
+</style>

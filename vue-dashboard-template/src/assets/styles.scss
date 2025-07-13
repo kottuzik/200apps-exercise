@@ -1,6 +1,8 @@
 @import 'primeicons/primeicons.css';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+$black: #23262F;
+
 html{direction: ltr;}
 *{
     font-family: 'Manrope', sans-serif;
@@ -23,9 +25,38 @@ html{direction: ltr;}
         color: #6956E5;
     }
 }
+li[role="menuitem"]{
+    padding: 0.521vw 0;
+}
+.p-menuitem-link{
+    display: flex;
+    align-items: center;
+    gap: 0.25vw;
+}
 .custom-icon{
      margin-inline-end: 0.5vw; color: #878787;
-    &.active{color: #6956E5;}
+    &:before{
+        width: 1.10vw;
+        height: 1.10vw;
+        display: block;
+    }
+    &.added-icon::before{
+        content: '';
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.active{
+        color: #6956E5;
+        + .text{color: #6956E5;}
+    }
+    &.team-icon:before{
+        background-image: url('../assets/images/team-icon.svg');
+    }
+    &.projects-icon:before{
+      
+        background-image: url('../assets/images/briefcase-icon.svg'); 
+    }
 }
 .p-menuitem-link {
     .text{
@@ -36,4 +67,14 @@ html{direction: ltr;}
     &:hover, .active .text{
         color: #6956E5; font-weight: 700;
     }
+}
+.common-border{
+    border-radius: 10px; border: 1px solid #E6E8EC;
+}
+.common-title{
+    color: $black; font-weight: 700; font-size: 0.938vw;
+}
+.card-wrapper{ 
+    width: 50%;
+    padding: 1vw 1.5vw;
 }

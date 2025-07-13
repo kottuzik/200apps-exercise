@@ -6,17 +6,22 @@
       <img src="../assets/images/setting.svg" alt="icon-setting" class="icon-setting">
       <p class="text">Teamify</p>
     </div>  
-    <Menu :model="items" >
+    <Menu :model="items">
       <template #item="{ item, props, index }">
         <a v-bind="props.action" class="p-menuitem-link" :class="{ 'active': index === activeIndex }">
           <span :class="['p-menuitem-icon', item.icon]"></span>
           <span :class="item.textClass">{{ item.label }}</span>
         </a>
       </template>
-
-      <!-- Phone: use  pi-phone -->
-       <!-- Tasks use:  pi-folder -->
-        <!-- Settings use: pi-cog -->
+    </Menu>
+    <div class="sidebar-divider"></div>
+    <Menu :model="bottomItems">
+      <template #item="{ item, props, index }">
+        <a v-bind="props.action" class="p-menuitem-link" :class="{ 'active': index === activeIndex }">
+          <span :class="['p-menuitem-icon', item.icon]"></span>
+          <span :class="item.textClass">{{ item.label }}</span>
+        </a>
+      </template>
     </Menu>
   </aside>  
 </template>
@@ -50,7 +55,7 @@ export default {
         },
         {
           label: 'Teams',
-          icon: 'pi pi-users custom-icon',
+          icon: 'pi custom-icon added-icon team-icon',
           to: '/',
           textClass: 'text'
         },
@@ -62,7 +67,27 @@ export default {
         },
         {
           label: 'Projects',
-          icon: 'pi pi-th-large custom-icon',
+          icon: 'pi custom-icon added-icon projects-icon',
+          to: '/',
+          textClass: 'text'
+        }
+      ],
+      bottomItems: [
+        {
+          label: 'Meetings',
+          icon: 'pi pi-phone custom-icon',
+          to: '/',
+          textClass: 'text'
+        },
+        {
+            label: ' Tasks',
+            icon: 'pi pi-folder custom-icon',
+            to: '/',
+           textClass: 'text'
+        },
+        {
+          label: 'Settings',
+          icon: 'pi pi-cog custom-icon',
           to: '/',
           textClass: 'text'
         }
@@ -71,3 +96,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.sidebar-divider{
+  max-width: 218px; margin-inline: auto; height: 1px; border-top: 1px solid #C4C4C4;
+  margin-block: 1.2vw;
+}
+</style>
