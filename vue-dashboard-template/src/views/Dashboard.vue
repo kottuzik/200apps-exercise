@@ -2,6 +2,7 @@
     import DashboardSidebar from '../components/DashboardSidebar.vue';
     import Header from '../components/Header.vue';
     import CardTeamsStrength from '../components/CardTeamsStrength.vue';
+    import CardStats from '../components/CardStats.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@
             <Header />
             <section class="inner-section">
                 <CardTeamsStrength />
+                <CardStats />
             </section>
         </main>
     </div>
@@ -18,6 +20,9 @@
 <style lang="scss" scoped>
     .dashboard-main{
         display: flex; width: 100%;
+    }
+    .inner-section{
+        display: flex; gap: 10px
     }
     .main-container{
         padding-inline: 2vw; padding-top: 1vw; width: 100%; 

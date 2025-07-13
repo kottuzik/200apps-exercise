@@ -38,7 +38,6 @@
             anchor: 'end',
             align: 'start',
             offset: -22,
-            zIndex: 1,
             color: '#222',
             font: {
                 weight: 'bold',
@@ -47,9 +46,19 @@
             }
         },
         scales: {
-            x: { grid: { display: false } },
-            y: { grid: { display: false }, beginAtZero: true, ticks: { stepSize: 1 }, max: 12 }
-  }
+                x: {
+                    grid: { display: false, drawBorder: false },
+                    border: { display: false },
+                    ticks: { display: true }
+                },
+                y: {
+                    grid: { display: false, drawBorder: false },
+                    border: { display: false }, 
+                    beginAtZero: true,
+                    ticks: { display: false, stepSize: 1 },
+                    max: 12
+                }
+            }
 }
 </script>
 <style lang="scss" scoped>
