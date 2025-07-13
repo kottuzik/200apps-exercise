@@ -99,7 +99,7 @@ const chartOptions = {
       ticks: { color: '#888', font: { size: 14 } }
     },
     y: {
-      grid: { color: '#F0F0F0' },
+      grid: { colo: '#f0f0f0', drawBorder: false },
       beginAtZero: true, max: 12,
       ticks: { color: '#888', font: { size: 14 }, stepSize: 2 }
     }
@@ -114,7 +114,7 @@ const chartOptions = {
 
 <style lang="scss" scoped>
     .project-wrapper{
-        width: 100%; margin-top: 2rem; box-shadow: 0px 4px 39px 9px #51459F17;
+        width: 100%; height: 427px; margin-top: 2rem; box-shadow: 0px 4px 39px 9px #51459F17;
         border-radius: 10px; padding: 1.5rem;
     }
     .project-line-chart{
@@ -122,10 +122,10 @@ const chartOptions = {
 
     }
     .project-title{
-        font-size: 1.125rem; font-weight: 700; line-height: 2;
+        font-size: 1.125rem; font-weight: 700; line-height: 2; margin-bottom: 1rem;
     }
     .chart-header {
-        display: flex; justify-content: space-between;  align-items: center;
+        display: flex; justify-content: space-between; align-items: baseline;
     }
     .custom-legend {
         display: flex; gap: 24px; align-items: center;

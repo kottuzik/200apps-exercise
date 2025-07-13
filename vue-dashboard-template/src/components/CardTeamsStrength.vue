@@ -35,15 +35,16 @@
         plugins: {
             legend: { display: false },
             datalabels: {
-            anchor: 'end',
-            align: 'start',
-            offset: -22,
-            color: '#222',
-            font: {
-                weight: 'bold',
-                size: 16
-            }
-            }
+                anchor: 'end',
+                align: 'start',
+                offset: -22,
+                color: '#222',
+                font: {
+                    weight: 'bold',
+                    size: 16
+                }
+            },
+            tooltip: { enabled: false }
         },
         scales: {
                 x: {
