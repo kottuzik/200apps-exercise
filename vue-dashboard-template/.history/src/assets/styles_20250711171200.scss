@@ -1,0 +1,28 @@
+@import 'primeicons/primeicons.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+html{direction: ltr;}
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+.aside {
+    width: 200px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.menu-setting{
+    display: flex;
+    align-items: center;
+    gap: 0.521vw;
+    margin-bottom: 2.042vw;
+    .text{
+        font-size: 1.146vw;
+        font-weight: 700;
+        color: #6956E5;
+    }
+}
+.custom-icon{
+    color: #6956E5; margin-inline-end: 0.5vw;
+}

@@ -1,0 +1,21 @@
+@import 'primeicons/primeicons.css';
+
+.aside {
+    width: 200px;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.menu-setting{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .text{
+        font-size: 22px;
+        font-weight: 600;
+        color: #6956E5;
+    }
+}
+.custom-icon{
+    color: #6956E5;
+}
