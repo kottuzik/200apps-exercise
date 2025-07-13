@@ -44,7 +44,7 @@ export default {
       items: [
         {
           label: 'Dashboard',
-          icon: 'pi pi-th-large custom-icon',
+          icon: 'pi pi-th-large custom-icon active',
           to: '/',
           textClass: 'text'
         },

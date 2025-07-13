@@ -24,7 +24,8 @@ html{direction: ltr;}
     }
 }
 .custom-icon{
-    color: #6956E5; margin-inline-end: 0.5vw;
+     margin-inline-end: 0.5vw; color: #878787;
+    &.active{color: #6956E5;}
 }
 .p-menuitem-link {
     .text{
