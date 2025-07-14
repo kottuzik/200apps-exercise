@@ -35,6 +35,9 @@ li[role="menuitem"]{
     display: flex;
     align-items: center;
     gap: 0.25vw;
+    &.active {
+        .pi, .text{color: #6956E5;}
+    }
 }
 .custom-icon{
      margin-inline-end: 0.5vw; color: #878787;
@@ -49,15 +52,14 @@ li[role="menuitem"]{
         background-repeat: no-repeat;
         background-position: center;
     }
-    &.active{
+ /*    &.active{
         color: #6956E5;
         + .text{color: #6956E5;}
-    }
+    } */
     &.team-icon:before{
         background-image: url('../assets/images/team-icon.svg');
     }
-    &.projects-icon:before{
-      
+    &.projects-icon:before{      
         background-image: url('../assets/images/briefcase-icon.svg'); 
     }
 }
@@ -67,8 +69,19 @@ li[role="menuitem"]{
         font-weight: 500;
         color: #878787;
     }
-    &:hover, .active .text{
+    &:hover .text {
         color: #6956E5; font-weight: 700;
+    }
+    &.active {
+        .text {
+            color: #6956E5; font-weight: 700;
+        }
+        .team-icon:before{
+            background-image: url('../assets/images/team-icon-blue.svg');
+        }
+        .projects-icon:before{      
+            background-image: url('../assets/images/briefcase-icon-blue.svg'); 
+        }
     }
 }
 .common-border{

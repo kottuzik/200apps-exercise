@@ -2,7 +2,12 @@
     <div class="common-border card-wrapper">
       <div class="stats-header">
         <h2 class="common-title">Employees</h2>
-        <span class="stats-date">Aug 25-Sept 25 <span class="arrow">▼</span></span>
+        <span class="stats-date">
+          Aug 25-Sept 25 
+          <span class="arrow">
+            <img src="../assets//images/arrow-drop-down-line.svg" alt="arrow">
+          </span>
+        </span>
       </div>
       <div class="stats-content">
         <div class="stats-info">
@@ -76,8 +81,8 @@
     align-items: center;
   }
   .stats-date {
-    color: #888;
-    font-size: 15px;
+    display: flex;
+    color: #888; font-size: 15px;
   }
   .arrow {
     font-size: 12px;
@@ -136,8 +141,6 @@
     border-radius: 50%;
     object-fit: cover;
     transform: translate(-50%, -50%);
-    border: 4px solid #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   }
   </style>
   
