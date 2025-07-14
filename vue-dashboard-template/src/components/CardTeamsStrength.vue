@@ -26,7 +26,7 @@
                 data: [1, 5, 3, 10],
                 backgroundColor: ['#FABE7A', '#F6866A', '#59E6F6', '#7661E2'],
                 borderRadius: 8,
-                barPercentage: 0.6
+                barPercentage: 1
             }
         ]
     };
@@ -38,7 +38,7 @@
                 anchor: 'end',
                 align: 'start',
                 offset: -22,
-                color: '#222',
+                color: '#828282',
                 font: {
                     weight: 'bold',
                     size: 16
@@ -65,7 +65,7 @@
 <style lang="scss" scoped>
 .legend {
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 12px 24px; margin-top: 16px; max-width: 45%;
+  gap: 12px 90px; margin-top: 16px; max-width: 45%;
 }
 .legend-item {
   display: flex;
