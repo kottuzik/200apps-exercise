@@ -77,7 +77,6 @@ const chartOptions = {
       intersect: false,
       position: 'nearest',
       yAlign: 'top',
-      //usePointStyle: true,
       callbacks: {
         label: function(context) {
           return `${context.dataset.label}: ${context.parsed.y} Projects`;
