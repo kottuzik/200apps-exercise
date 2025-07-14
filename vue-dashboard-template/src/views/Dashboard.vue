@@ -30,7 +30,7 @@
         display: flex; width: 100%;
     }
     .main-container{
-        padding-inline: 2vw; padding-top: 1vw; width: 100%; overflow: auto; padding-bottom: 2vw; height: 100vh;
+        padding-inline: 2vw 3vw; padding-block: 1vw 2vw; width: 100%; overflow: auto; height: 100vh;
     }
     .inner-section{
         display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); margin-top: 2.2rem;
